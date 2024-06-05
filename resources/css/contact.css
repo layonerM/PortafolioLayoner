@@ -234,4 +234,27 @@ form .inp_field input {
         justify-content: center;
         flex-direction: column;
     }
+
+    .info_container {
+        width: 100%; 
+        display: flex;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .layer6 .contact_us {
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+    }
+
+    .info_container {
+        width: 90%; 
+        display: flex;
+    }
+
+
+ 
+    
 }
