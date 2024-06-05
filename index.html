@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>Portafolio Layoner </title>
+        <link
+            rel="stylesheet"
+            href="resources/swiper js/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="resources/css/loader.css" />
+        <link rel="stylesheet" href="resources/css/hamburger.css" />
+        <link rel="stylesheet" href="resources/css/home.css" />
+        <link rel="stylesheet" href="resources/css/about.css" />
+        <link rel="stylesheet" href="resources/css/services.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css" />
+        <link rel="stylesheet" href="resources/css/blog.css" />
+        <link rel="stylesheet" href="resources/css/contact.css" />
+        <link href="resources/mapbox-gl/mapbox-gl.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/ELE.jpg"
+            type="image/x-icon"
+        />
+    </head>
+    <body onload="loaded()">
+        <div class="loader">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+            <div class="c c4"></div>
+            <div class="c c5"></div>
+            <div class="c c6"></div>
+        </div>
+        <script>
+            let loader = document.querySelector(".loader");
+            function loaded() {
+                loader.classList.add("remove");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 1000);
+            }
+        </script>
+    
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <nav class="navigation">
+            <h1>
+                Layo
+                <div></div>
+                <div></div>
+            </h1>
+            <ul>
+                <li><a href="#" onclick="home()">Inicio</a></li>
+                <li>
+                    <a
+                        href="#"
+                        onclick="about(); animate3.play(); animate4.play();"
+                        >Sobre mi</a
+                    >
+                </li>
+                <li><a href="#" onclick="services(); animate6.play();">servicios</a></li>
+                <li><a href="#" onclick="portfolio()">portfolio</a></li>
+                <li><a href="#" onclick="blog()">Reseñas</a></li>
+                <li>
+                    <a href="#" onclick="contact(); animate5.play()">contacto</a>
+                </li>
+            </ul>
+            <p>&copy; 2024 layoner.</p>
+        </nav>
+
+        <div class="container">
+            <div class="layer layer1 active">
+                <div class="home main">
+                    <div class="canvas_container">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content-for-home">
+                        <div class="img-container"></div>
+                        <h1 align="center">Programador Full Stack PHP, JavaScript, MySQL </h1>
+                        <div class="social-icons">
+                            <div class="s-icon">
+                                <a href="https://www.facebook.com/layoner.ortega">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <div class="s-name">Facebook</div>
+                            </div>
+                        
+                            <div class="s-icon">
+                                <a href="https://github.com/layonerM">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <div class="s-name">GitHub</div>
+                            </div>
+                         
+                            <div class="s-icon">
+                                <a href="https://www.instagram.com/layoome?fbclid=IwZXh0bgNhZW0CMTAAAR3U6dHVu7bqKa7HskSwsfm2KKRCZypp0_ZhfE2u7ZcCCgOZrgnZYNV4A1c_aem_AdoCohFdHJ3oILKcM2_hKxGLlHe62wIc1dHlXyb8GRQQgqMaOqj4PQnJ9lc8W3HbajEd-zex2-S2uQnWpr5ffXhu">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <div class="s-name">Instagram</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="https://mail.google.com/mail/u/2/#sent?compose=CllgCJTJFqHLWbPxCjzhhMdlFbwLmMsXCcwkTQWNrwvCfMFPDbjFdpGGjdWPQrbwgjRMzRWzWZL">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <div class="s-name">Email</div>
+                            </div>
+                        </div>
+
+                        <div class="side-nav">
+                            <button
+                                onclick="about(); animate3.play(); animate4.play();"
+                            >
+                                <span class="w">L</span>
+                                <span class="tooltip"> POR QUE TU? </span>
+                            </button>
+                            <button onclick="services(); animate6.play();">
+                                <span class="w">L</span>
+                                <span class="tooltip"> a que te dedicas? </span>
+                            </button>
+                            <button onclick="portfolio()">
+                                <span class="w">L</span>
+                                <span class="tooltip">
+                                    Que has echo?
+                                </span>
+                            </button>
+                            <button onclick="blog()">
+                                <span class="w">L</span>
+                                <span class="tooltip"> que dicen los demas? </span>
+                            </button>
+                            <button onclick="contact(); animate5.play()">
+                                <span class="w">L</span>
+                                <span class="tooltip"> Donde Estas? </span>
+                            </button>
+                        </div>
+
+                        <div class="titles-for-side-nav">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer2">
+                <div class="about main">
+               
+                    <div class="styling">
+                        <div class="absolute box"></div>
+                        <div class="absolute circle"></div>
+                        <div class="absolute triangle"></div>
+                        <div class="absolute dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                            <div class="dot dot4"></div>
+                            <div class="dot dot5"></div>
+                            <div class="dot dot6"></div>
+                            <div class="dot dot7"></div>
+                            <div class="dot dot8"></div>
+                            <div class="dot dot9"></div>
+                            <div class="dot dot10"></div>
+                            <div class="dot dot11"></div>
+                            <div class="dot dot12"></div>
+                            <div class="dot dot13"></div>
+                            <div class="dot dot14"></div>
+                            <div class="dot dot15"></div>
+                            <div class="dot dot16"></div>
+                            <div class="dot dot17"></div>
+                            <div class="dot dot18"></div>
+                            <div class="dot dot19"></div>
+                            <div class="dot dot20"></div>
+                            <div class="dot dot21"></div>
+                            <div class="dot dot22"></div>
+                            <div class="dot dot23"></div>
+                            <div class="dot dot24"></div>
+                        </div>
+
+                        <svg
+                            class="wave absolute"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,320L48,277.3C96,235,192,149,288,122.7C384,96,480,128,576,165.3C672,203,768,245,864,234.7C960,224,1056,160,1152,112C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+
+                        <svg
+                            class="wave absolute opposite"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,224L48,213.3C96,203,192,181,288,192C384,203,480,245,576,218.7C672,192,768,96,864,64C960,32,1056,64,1152,101.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+                    </div>
+
+             
+                    <div class="wrapper">
+                        <div class="face face1">
+                            <div class="content">
+                                <p>Hola,</p>
+                                <h1>Soy Layoner</h1>
+                                <p class="text">
+                                    Cuento con conocimientos avanzados en PHP, JavaScript, 
+                                    HTML, CSS, jQuery, y MySQL, además de experiencia en el 
+                                    uso de herramientas como Postman y GitHub. También poseo habilidades 
+                                    en diseño responsive y manejo de Figma. Estoy motivado por aplicar mis 
+                                    competencias técnicas en un entorno profesional y contribuir al éxito 
+                                    del equipo con mi dedicación y capacidad para aprender rápidamente.
+                                </p>
+                                <a
+                                    class="button download"
+                                    href="./resources/img/LayonerCurriculum.pdf"
+                                    download="Curriculum"
+                                    >Descargar CV</a
+                                >
+                                <a
+                                    class="button hire"
+                                    href="#"
+                                    class="hire"
+                                    onclick="contact(); animate5.play()"
+                                    >Contratame.</a
+                                >
+                            </div>
+                        </div>
+                        <div class="face face2"></div>
+                    </div>
+
+                 
+                    <nav class="about_nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#" data-text="one"
+                                    >habilidades</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-text="two">experiencia</a>
+                            </li>
+                            <li>
+                                <a href="#" data-text="three">Educacion</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="about_container">
+                        <!-- SKILL -->
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="name">HTML5</div>
+                                <div class="value" style="left: 90%">90%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">CSS</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">JavaScript</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">PHP</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Jquery</div>
+                                <div class="value" style="left: 50%">50%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 50%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">MYSQL</div>
+                                <div class="value" style="left: 55%">55%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 55%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCE -->
+                        <div class="experience">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date"> 2022 - Presente</i>
+                                <h2>Desarrollador Frontend: JavaScript & jQuery</h2>
+                                <i class="name_company">Programador React</i>
+                                <article class="text_hidden">
+                                    Domino JavaScript para añadir interactividad y d
+                                    inamismo a las aplicaciones web. He desarrollado 
+                                    soluciones tanto en el lado del cliente como en el
+                                     lado del servidor, aprovechando su versatilidad y potencia.
+                                     Utilizo jQuery para simplificar la manipulación del DOM 
+                                     y manejar eventos de manera eficiente. He creado interfaces
+                                      de usuario intuitivas y responsivas, mejorando la experiencia
+                                       del usuario con menos código y 
+                                     Estoy versado en React, construyendo componentes reutilizables
+                                      y administrando el estado de aplicaciones complejas. Mi enfoque
+                                       en la creación de interfaces de usuario rápidas y responsivas ha 
+                                       resultado en proyectos modernos y escalables.
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date"> 2022 - 2024</i>
+                                <h2>Desarrollador Backend: PHP & MySQL</h2>
+                                <i class="name_company"></i>
+                                <article class="text_hidden">
+                                    Tengo experiencia en el desarrollo de aplicaciones 
+                                    web dinámicas utilizando PHP, junto con la gestión 
+                                    eficiente de bases de datos mediante MySQL. He trabajado 
+                                    en la creación y mantenimiento de sistemas complejos,
+                                     optimizando consultas y garantizando una alta disponibilidad de datos.
+                                </article>
+                            </div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Feb 2022 - 2024</i>
+                                <h2>Diseñador Web: HTML & CSS</h2>
+                                <i class="name_company">Especialista en Frameworks CSS: Bootstrap & Tailwind CSS
+                                </i>
+                                <article class="text_hidden">
+                                    Con HTML y CSS, diseño y estructuro sitios web atractivos y 
+                                    accesibles. Mi conocimiento avanzado de estas tecnologías me
+                                     permite crear layouts semánticos y estilizados que funcionan 
+                                     perfectamente en todos los dispositivos.
+                                     He utilizado Bootstrap para desarrollar sitios web responsivos
+                                      y móviles rápidamente. Su sistema de grid y componentes predefinidos 
+                                      me han permitido acelerar el desarrollo sin comprometer la calidad del diseño.
+                                 Con Tailwind CSS, creo interfaces altamente personalizadas y modernas. Su enfoque u
+                                 tility-first me permite diseñar de manera rápida y precisa, asegurando consistencia 
+                                 y flexibilidad en los estilos.
+
+                             Esta combinación de habilidades y experiencia me permite abordar proyectos web con una perspectiva integral,
+                              garantizando funcionalidad, estética y rendimiento.
+                                 
+                                      
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">2023- actual</i>
+                                <h2>Desarrollo Backend y Control de Versiones: Node.js & GitHub</h2>
+                                <i class="name_company">Testing, Documentación de APIs y Diseño Gráfico: Postman & Photoshop</i>
+                                <article class="text_hidden">
+                                    Tengo experiencia avanzada en GitHub, utilizando la plataforma
+                                     para el control de versiones y la colaboración eficiente en 
+                                     proyectos. En Node.js, he desarrollado aplicaciones del lado del servidor,
+                                      creando APIs RESTful y servicios backend robustos. Con Postman, diseño,
+                                       pruebo y documento APIs de manera efectiva, asegurando su correcto funcionamiento
+                                       . Además, manejo Adobe Photoshop para mejorar la estética de las aplicaciones web, 
+                                       desde prototipos hasta optimización de imágenes, logrando un diseño visual profesional
+                                        e impactante. Esta combinación de habilidades me permite contribuir significativamente
+                                         en todo el ciclo de desarrollo, asegurando integración perfecta y atractivo visual.
+                                </article>
+
+                            </div>
+                        </div>
+                        <div class="education">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">2022- 2024</i>
+                                <h2>PHP & MySQL</h2>
+                                <i class="name_company">Colombia</i>
+                                <article class="text_hidden">
+                                   Academia Sintactic(Valledupar-Cesar) <br>
+                                   W3Schools - PHP Tutorial <br>
+                                   Udemy - PHP for Beginners <br>
+                                   Codecademy - Learn PHP
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">2022 - 2024</i>
+                                <h2>JavaScript & jQuery</h2>
+                                <i class="name_company">Bogota DC.</i>
+                                <article class="text_hidden">
+                                    Academia Sintactic(Valledupar-Cesar) <br>
+                                    Universidad IberoAmericana (Bootcam) <br>
+                                    MDN Web Docs - JavaScript Guide <br>
+                                    Codecademy - Learn JavaScript <br>
+                                    jQuery Learning Center - jQuery Fundamentals
+                                </article>
+                            </div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-open"></i>
+                                <i class="date"> 2024</i>
+                                <h2>HTML & CSS  , Bootstrap & Tailwind CSS</h2>
+                                <i class="name_company">Valledupar Cesar</i>
+                                <article class="text_hidden">
+                                    Academia Sintactic(Valledupar-Cesar) <br>
+                                    Universidad IberoAmericana (Bootcam) <br>
+                                    Udemy - Modern HTML & CSS From The Beginning (Including Sass) <br>
+                                    FreeCodeCamp - Responsive Web Design Certification
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-open"></i>
+                                <i class="date">2022 - 2026</i>
+                                <h2>Ingenieria En Sistemas</h2>
+                                <i class="name_company">BOGOTA DC</i>
+                                <article class="text_hidden">
+                                    Hasta el 5to semestre de Ingeniería en Sistemas en la Universidad 
+                                    Iberoamericana, adquirí fundamentos de programación, bases de datos,
+                                     diseño de sistemas y redes, junto con experiencia práctica en proyectos
+                                      de software
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer3">
+                <div class="services main">
+                    
+                    <div class="hero">
+                        <span class="typography">
+                            <span class="t_dummy">Se como</span> <br />
+                            <span class="t-box">
+                                <span class="box-side box-front"
+                                    >ser Analitico</span
+                                >
+                                <span class="box-side box-top"
+                                    >Organizar</span
+                                >
+                                <span class="box-side box-back"
+                                    >ser Colaborativo</span
+                                >
+                                <span class="box-side box-bottom"
+                                    >ser innovador</span
+                                >
+                            </span>
+                        </span>
+                        <p class="hero-text">
+                           
+                            Layo es un excelente Programador web y un Desarrolador impecable.
+                             Es un placer trabajar con él, tiene una excelente relación
+                              calidad-precio y siempre hará un esfuerzo adicional cuando 
+                              sea necesario.
+                        
+                        </p>
+                    </div>
+                    <div class="capabilities left move-little-down">
+                        <img src="resources/img/elements/web_bg.png" alt="" />
+                        <p class="c_content">
+                            <span class="c_title">Web</span>
+                           
+                            mi viaje creativo comenzó con el diseño web. 
+                            Para desarrollar mis propios diseños, aprendi a
+                             programar y desde entonces e trabajado duro
+                              para seguir siendo relevante en ambos campos.
+                
+                            <br />
+                            <a href="https://github.com/layonerM">Saber Mas</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                    <div class="capabilities right">
+                        <p class="c_content">
+                            <span class="c_title">Graphics</span>
+                            Con Tailwind CSS y Bootstrapp, creo interfaces altamente personalizadas y modernas. Su enfoque utility-first 
+                            me permite diseñar de manera rápida y precisa, asegurando consistencia y flexibilidad en los estilos.
+                            Además, manejo Adobe Photoshop para mejorar la estética de las aplicaciones web, desde prototipos hasta 
+                            optimización de imágenes, logrando un diseño visual profesional e impactante. Esta combinación de habilidades
+                             me permite contribuir significativamente en todo el ciclo de desarrollo, asegurando integración perfecta y atractivo visual
+                            <br />
+                            <a href="https://github.com/layonerM">Saber MAS</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                        <img
+                            src="resources/img/elements/graphics_bg.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="capabilities left">
+                        <img
+                            src="resources/img/elements/seo_bg.png"
+                            alt=""
+                            style="
+                                background: #2929292f;
+                                backdrop-filter: blur(4px);
+                                border-radius: 40px;
+                            "
+                        />
+                        <p class="c_content">
+                            <span class="c_title">SEO</span>
+                            Dominando el arte del código y la creatividad,
+                              trae a la vida soluciones tecnológicas
+                              ingeniosas que desafían los límites de lo posible.
+                              para trabajar en equipo y comunicarme eficazmente
+                               resalta mi naturaleza colaborativa. Además, mi disposición p
+                               ara aprender y adaptarme a nuevas tecnologías me posicionan
+                                como un profesional versátil y ágil en un mundo digital en constante evolución.
+                            <br />
+                            <a href="https://github.com/layonerM">Saber Mas</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                    <div class="foot">
+                        <h2>Trabajos:</h2>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Proyectos</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources/img/portfolios/web/html1.png"
+                                alt="portfolio"
+                            />
+                        </div>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Diseños</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources/img/portfolios/app/jquery.png"
+                                alt="portfolio"
+                            />
+                        </div>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Sitios Web</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img
+                                src="resources/img/portfolios/web/page.png"
+                                alt="portfolio"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer4">
+                <div class="portfolio main">
+                    <div class="tip main">
+                        <div class="allContent">
+                            <div class="description" style="display: none">
+                                <div class="pro_intro">
+                                    <div class="nameplate">
+                                        <h1>Layonner</h1>
+                                        <span
+                                            >Categoria:
+                                            <span style="color: #999"
+                                                >Pagina Web</span
+                                            ></span
+                                        >
+                                    </div>
+                                    <div class="other_text">
+                                        <h2>Detalles:</h2>
+                                        <p
+                                            class="pro_brief"
+                                            style="
+                                                color: #999;
+                                                padding-left: 15px;
+                                            "
+                                        >¡Hola! Soy un programador de 19 años en busca de empleo. Tengo conocimientos sólidos en PHP, 
+                                        JavaScript, HTML, CSS, jQuery, MySQL, y Postman. Además, manejo GitHub y Figma,
+                                         y tengo experiencia en diseño responsive. Estoy entusiasmado por aplicar mis
+                                          habilidades y aprender en un entorno profesional.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pro_info">
+                                    <h2>Informacion</h2>
+                                    <p class="Date">
+                                        <b>Fecha: </b>
+                                        <span style="color: #999">2024</span>
+                                    </p>
+                                    <p class="client">
+                                        <b>Cliente: </b>
+                                        <span style="color: #999">Sintactic</span>
+                                    </p>
+                                    <p>
+                                        <b>Lenguajes: </b>
+                                        <span style="color: #999"
+                                            >HTML, CSS, JavaScript</span
+                                        >
+                                    </p>
+                                    <p class="link">
+                                        <b>Web: </b>
+                                        <span style="color: #999"
+                                            ><a href="#"
+                                                >www.domain.com</a
+                                            ></span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="closeButton">
+                                <span>Detalles</span>
+                                <div class="icon"></div>
+                            </button>
+                            <button class="exitButton">&times;</button>
+
+                            <div class="port_content">
+                                <div class="swiper-container-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="about_nav padding_top">
+                        <ul>
+                            <li>
+                                <a
+                                    class="filter active"
+                                    href="#"
+                                    data-filter="all"
+                                    >Todo</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".web"
+                                    >Paginas Web</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".logo"
+                                    >frameworks</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".card"
+                                    > diseños</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".app"
+                                    >aplicaciones</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".icon"
+                                    >Lenguajes</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mymixcont">
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/html.png"
+                                alt=""
+                            />
+                            <span class="title">Enver web</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/react.png"
+                                alt=""
+                            />
+                            <span class="title">REACT</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/css.png"
+                                alt=""
+                            />
+                            <span class="title">CSS </span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/html1.png"
+                                alt=""
+                            />
+                            <span class="title">Student Guide</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/coomeva.png"
+                                alt=""
+                            />
+                            <span class="title">FormPHP</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/tailwind.png"
+                                alt=""
+                            />
+                            <span class="title">Tailwind</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                       
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/jquery2.png"
+                                alt=""
+                            />
+                            <span class="title">Lista de Tareas</span>
+                            <span class="port_link">VER</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/diseño.png"
+                                alt=""
+                            />
+                            <span class="title">Layoner M</span>
+                            <span class="port_link">VER</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources/img/portfolios/web/page.png"
+                                alt=""
+                            />
+                            <span class="title">Nurgo Page</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/ds.png"
+                                alt=""
+                            />
+                            <span class="title">Layoner M</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/bootstrap.jpg"
+                                alt=""
+                            />
+                            <span class="title">Bootstraap</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/html.jpg"
+                                alt=""
+                            />
+                            <span class="title">HTML</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/crud.png"
+                                alt=""
+                            />
+                            <span class="title">CrudPHP</span>
+                            <span class="port_link">VER</span>
+                        </div>
+                    
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/git.png"
+                                alt=""
+                            />
+                            <span class="title">GitHub Git</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/portfolios/card/Layoner M.jpg"
+                                alt=""
+                            />
+                            <span class="title">Layoner M</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/jquery.png"
+                                alt=""
+                            />
+                            <span class="title">Jquery</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/java.png"
+                                alt=""
+                            />
+                            <span class="title">JavaScript</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/postman.jpg"
+                                alt=""
+                            />
+                            <span class="title">Postman</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/jquery.png"
+                                alt=""
+                            />
+                            <span class="title">Lista de compras</span>
+                            <span class="port_link">ver</span>
+                        </div>
+
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/node.png"
+                                alt=""
+                            />
+                            <span class="title">Node JS</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/mysql.png"
+                                alt=""
+                            />
+                            <span class="title">MYSQL</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                        
+                      
+                        <div class="mix app">
+                            <img
+                                src="resources/img/portfolios/app/loginphp.png"
+                                alt=""
+                            />
+                            <span class="title">LoginPHP</span>
+                            <span class="port_link">VER</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources/img/portfolios/logo/photo.png"
+                                alt=""
+                            />
+                            <span class="title">Photoshop</span>
+                            <span class="port_link">Ver</span>
+                        </div>
+                       
+                        <div class="mix icon">
+                            <img
+                                src="resources/img/portfolios/icon/PHp.jpg"
+                                alt=""
+                            />
+                            <span class="title">PHP</span>
+                            <span class="port_link">VER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer5">
+                <div class="testimonial">
+                    <h1>
+                        <span>Mira lo que mis clientes dicen sobre mi.</span>
+                    </h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/img/ELE.jpg" alt="" />
+                                <h4>Erik Lasher</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    "Trabajar con layoner ha sido una experiencia increíble. 
+                                    Su conocimiento en PHP, JavaScript y MySQL es excepcional. 
+                                    Desarrolló una aplicación web para nosotros que superó nuestras
+                                     expectativas. Recomiendo encarecidamente
+                                      a layoner para cualquier proyecto de desarrollo web."
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/ELE.jpg" alt="" />
+                                <h4>Universidad IberoAmericana</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    "layoner es un verdadero profesional en el campo de la programacion. 
+                                    Utilizó React y jQuery para crear una interfaz de usuario intuitiva y responsiva 
+                                    para nuestro sitio web. 
+                                    Estamos muy satisfechos con el resultado final ."
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/ELE.jpg" alt="" />
+                                <h4>Jesus Pizarro</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    "Tuvimos la suerte de contar con Layoner para el desarrollo 
+                                    de nuestro backend en Node.js. Su experiencia y habilidades en 
+                                    GitHub y Postman fueron cruciales para la gestión y prueba de nuestras APIs.
+                                     Además ¡Altamente recomendable!"
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/ELE.jpg" alt="" />
+                                <h4>Andres Silva</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    "layoner no solo tiene habilidades técnicas excepcionales,
+                                     sino también un gran sentido del diseño. Usando Photoshop y
+                                      Tailwind CSS, creó un diseño visualmente impactante para nuestra aplicación.
+                                       Su creatividad y atención al detalle realmente se destacaron.
+                                        Estamos encantados con su trabajo y esperamos colaborar nuevamente en el futuro."
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/ELE.jpg" alt="" />
+                                <h4>David Ortega</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    "Como estudiante de ingeniería en sistemas,
+                                     Layoner demostró ser un profesional dedicado y apasionado.
+                                      Desarrolló un proyecto complejo de base de datos con PHP y MySQL,
+                                       mostrando un dominio impresionante de estas tecnologías.
+                                         Definitivamente lo recomendaría 
+                                         para cualquier proyecto de desarrollo."
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/ELE.jpg" alt="" />
+                                <h4>Academia Sintactyc</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    "Trabajar con Layoner fue un placer absoluto.
+                                     Su conocimiento de HTML, CSS, y frameworks como
+                                      Bootstrap y Tailwind CSS permitió crear un sitio 
+                                      web hermoso y funcional.
+                                        ¡Muy recomendado!"
+                                </p>
+                            </div>
+                        </div>
+                     
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer6">
+                <div class="contact_us">
+                    <div id="map"></div>
+                    <address class="info_container">
+                        <div class="info info1">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="iname">Telefono</span>
+                            <a href="tel:+573226682522">+573226682522</a>
+                            <a href="tel:+573226682522">+573226682522</a>
+                        </div>
+                        <div class="info info2">
+                            <i class="fas fa-home"></i>
+                            <span class="iname">Direccion</span>
+                            <a
+                                href="https://www.google.com/maps/place/Valledupar,+Cesar/@10.4732098,-73.2666003,242a,35y,134.86h,45t/data=!3m1!1e3!4m6!3m5!1s0x8e8ab9b5d6cf71d7:0x84a43625b14c234a!8m2!3d10.4742449!4d-73.2436335!16zL20vMDMxNWJx?entry=ttu"
+                            >
+                                <h3>Valledupar Cesar</h3>
+                                <span>Calle 11b 19g-16</span><br />
+                                <span>Colombia</span>
+                            </a>
+                        </div>
+                        <div class="info info3">
+                            <i class="fas fa-envelope"></i>
+                            <span class="iname">Email</span>
+                            <a href="https://mail.google.com/mail/u/2/#sent?compose=CllgCJTJFqHLWbPxCjzhhMdlFbwLmMsXCcwkTQWNrwvCfMFPDbjFdpGGjdWPQrbwgjRMzRWzWZL"
+                                >murgasortega@gmail.com</a
+                            >
+                            <a href="https://mail.google.com/mail/u/2/#sent?compose=CllgCJTJFqHLWbPxCjzhhMdlFbwLmMsXCcwkTQWNrwvCfMFPDbjFdpGGjdWPQrbwgjRMzRWzWZL"
+                                >murgasortega@gmail.com</a
+                            >
+                        </div>
+                    </address>
+
+                    <form action="https://formsubmit.co/murgasortega@gmail.com" method="POST">
+                        <h1>Ponerse en contacto</h1>
+                        <div class="inp_field">
+                            <i class="fas fa-user"></i>
+                            <input
+                                type="text"
+                                name="name"
+                                class="fname"
+                                id="fname"
+                                placeholder="Nombre Completo"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-envelope"></i>
+                            <input
+                                type="email"
+                                name="email"
+                                class="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-angle-double-right"></i>
+                            <input
+                                type="text"
+                                name="subject"
+                                class="subject"
+                                id="subject"
+                                placeholder="Sujeto"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="5"
+                            class="message"
+                            id="message"
+                            placeholder="Mensaje"
+                            required
+                        ></textarea>
+                        <input type="submit" class="submit" id="submit" value="Entregar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------JQUERY {https://jquery.com/} [usado]----------------->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-----------------MIX IT UP {https://www.kunkalabs.com/mixitup/} [Usado]----------------->
+        <script src="resources/js/mixitup.min.js"></script>
+        <!-----------------SWIPER JS {https://swiperjs.com/} [Usado]----------------->
+        <script src="resources/swiper js/swiper-bundle.min.js"></script>
+        <!-----------------MAPBOX GL {https://www.mapbox.com/} [Usado ]----------------->
+        <script src="resources/mapbox-gl/mapbox-gl.js"></script>
+        <!-----------------EMAIL JS {https://www.emailjs.com/} [Usado]----------------->
+        <script src="resources/js/email.min.js"></script>
+        <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_5OMETIDQ2Nm9qBMtaFNz4");
+            })();
+        </script>
+     
+        <script src="resources/js/vanilla-tilt.min.js"></script>
+        <!-----------------ANIME JS {https://animejs.com/} [usado.]----------------->
+        <script src="resources/js/anime.min.js"></script>
+        <!-----------------LOCAL (HOME)----------------->
+        <script src="resources/js/home.js"></script>
+        <!-----------------LOCAL (ABOUT)----------------->
+        <script src="resources/js/about.js"></script>
+        <!-----------------LOCAL (SERVICES)----------------->
+        <script src="resources/js/services.js"></script>
+        <!-----------------LOCAL (PORTFOLIO)----------------->
+        <script src="resources/js/portfolio.js"></script>
+        <!-----------------LOCAL (BLOG)----------------->
+        <script src="resources/js/blog.js"></script>
+        <!-----------------LOCAL (CONTACT)----------------->
+        <script src="resources/js/contact.js"></script>
+        <!-----------------LOCAL (MAIN FILE)----------------->
+        <script src="resources/js/main.js"></script>
+
+        <!-----------------LOCAL (MAIN FILE { para la animacion.})----------------->
+        <script>
+            const animate1 = anime.timeline({
+                targets: ".circle",
+                loop: true,
+                duration: 2000,
+                direction: "alternate",
+                easing: "easeInOutQuad",
+            });
+            animate1.add({
+                translateX: 350,
+            });
+
+            let dot = document.querySelectorAll(".dot");
+            for (let i = 0; i < dot.length; i++) {
+                const ind = dot[i];
+                const animate2 = anime.timeline({
+                    targets: ind,
+                    loop: true,
+                    direction: "alternate",
+                    delay: i * 100,
+                });
+                animate2.add({
+                    scale: 2,
+                });
+            }
+
+            let span = document.querySelectorAll(".content .text span");
+            const animate3 = anime.timeline({
+                targets: span,
+                easing: "easeInOutExpo",
+                delay: anime.stagger(20, { direction: "reverse" }),
+                direction: "reverse",
+                autoplay: false,
+            });
+
+            animate3.add({
+                rotate: () => {
+                    return anime.random(-360, 360);
+                },
+                translateX: () => {
+                    return anime.random(-500, 500);
+                },
+                translateY: () => {
+                    return anime.random(-500, 500);
+                },
+                duration: 3000,
+            });
+
+            const animate4 = anime({
+                targets: ".button",
+                scale: [0, 1],
+                delay: anime.stagger(200, { start: 7000 }),
+                autoplay: false,
+            });
+
+            const animate5 = anime({
+                targets: [
+                    document.querySelectorAll(".info"),
+                    document.querySelectorAll(".inp_field"),
+                    ".message",
+                    ".submit",
+                ],
+                translateY: [50, 0],
+                rotateX: [90, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                duration: 750,
+                autoplay: false,
+                easing: "easeOutQuint",
+            });
+            
+            const animate6 = anime({
+                targets: ['.services .t_dummy', '.services .hero-text'],
+                duration: 1000,
+                scaleX: [0, 1],
+                delay: anime.stagger(300, {start: 1000}),
+                autoplay: false,
+            });
+
+            function resize() {
+                if (window.innerWidth <= 632) {
+                    animate5.play();
+                    animate3.play();
+                    animate4.play();
+                    animate6.play();
+                }
+            }
+            resize();
+            window.addEventListener("resize", resize);
+        </script>
+    </body>
+</html>
