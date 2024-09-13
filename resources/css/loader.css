@@ -50,34 +50,34 @@
 .loader .c.c2 {
     width: 260px;
     height: 260px;
-    border-color: indigo;
+    border-color: rgb(255, 0, 0);
     animation-delay: .1s;
 }
 
 .loader .c.c3 {
     width: 220px;
     height: 220px;
-    border-color: dodgerblue;
+    border-color: rgb(255, 0, 0);
     animation-delay: .2s;
 }
 
 .loader .c.c4 {
     width: 180px;
     height: 180px;
-    border-color: green;
+    border-color: rgb(68, 1, 1);
     animation-delay: .3s;
 }
 
 .loader .c.c5 {
     width: 140px;
     height: 140px;
-    border-color: gold;
+    border-color: rgb(131, 15, 0);
     animation-delay: .4s;
 }
 
 .loader .c.c6 {
     width: 100px;
     height: 100px;
-    border-color: aqua;
+    border-color: rgb(112, 29, 23);
     animation-delay: .5s;
 }
