@@ -36,7 +36,7 @@
 .content-for-home .img-container {
     width: 500px;
     height: 500px;
-    background: url("../img/layo.png") no-repeat top left;
+    background: url("../img/undraw_dev-productivity_5wps.svg") no-repeat top left;
     background-size: cover;
 }
 
@@ -214,7 +214,7 @@
     .content-for-home .img-container {
         width: 200px;
         height: 200px;
-        background: url(../img/layo.png) no-repeat top left;
+        background: url(../img/undraw_dev-productivity_5wps.svg) no-repeat top left;
         background-size: cover;
     }
 }
